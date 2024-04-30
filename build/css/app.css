@@ -1,0 +1,96 @@
+html {
+  overflow-y: scroll;
+  font-family: 'arial, Helvetica, sans-serif';
+}
+
+body{ 
+  margin-top: 60px;
+}
+
+.nav-shadow-box {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2) !important;
+} 
+
+#hits {
+  min-height: 1000px;
+}
+
+.shadow-box:hover {
+  box-shadow: -8px 0 8px -8px rgba(0, 0, 0, 0.2), 8px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body { 
+  min-height: 100px;
+}
+
+.card-img-top {
+  border-radius: 50%;
+  margin: 10px !important;
+  width: 90%;
+}
+
+.ais-refinement-list--list {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ais-refinement-list--item {
+  display: inline-block;
+  background-color: #DFDFDF;
+  color: gray;
+  padding: 5px 10px;
+  margin-right: 3px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.ais-refinement-list--item__active {
+  background-color: gray;
+  color: white;
+}
+
+.ais-refinement-list--item__active .ais-refinement-list--label::before {
+  content: "\2713   ";
+  color: white;
+  white-space: nowrap;
+}
+
+.ais-refinement-list--checkbox {
+  display: none;
+}
+
+.ais-refinement-list--count {
+  display: none;
+}
+
+#search-input {}
+
+#search-input, #search-input:focus {
+  transition: border-color .3s ease-in;
+  outline: 0;
+}
+
+#search-input::-webkit-input-placeholder, #search-input:-moz-placeholder, #search-input:-moz-placeholder, #search-input:-ms-input-placeholder {
+  font-weight: 100;
+  color: #999;
+}
+
+#search-input-icon {
+  position: relative;
+}
+
+#search-input-icon:before {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 20px;
+  height: 20px;
+  content: '';
+  cursor: default;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABE0lEQVR4AbXRA2wYYRwF8JsVLVq8YIymcA5n23bbsLbt9r7/q+PaCGsrTqpYta1/3Z7q7l348vtOT1oKnSQ7pFEBJZBp0DHJOE4HSWASvHwNCgtjVgqmCYL4IK6IX5Qyj6N1kCLAaMZFRfMAPWD6q2LhZ2kK4+HnNYffgKnT94iiggsYoZIuKAHTU2WRCxYv9ZA8wPBUwkqwfEkPxVcwZOXJLDC910P4gYWFElqDEadzu6geTLcVTdhxjGFa3FQ7mIHR6LRbVQp3MLWJ+yt3wz+MgBGpXWY3ksFgyhO2eCvcUb00pX7IXbBCv2LrFkSvRiX5KH2kIIqBvfzwxR5JEhbGVJf/TenLxuiIfENaP/Rljs0ATnu/OPUu9VwAAAAASUVORK5CYII=) no-repeat;
+}
+
+/*# sourceMappingURL=app.css.map*/

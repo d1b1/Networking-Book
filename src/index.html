@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Personal Network
+  </title>
+  <meta name="description" content="Search and find network tools">
+  <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGYW035CZB"></script>
+  <script>
+    if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-CGYW035CZB');
+    } else {
+      console.log('GA is off.');
+    }
+  </script>
+
+  <nav class="navbar navbar-expand-md fixed-top nav-shadow-box"
+    style="background-color: #EFEFEF; border-bottom: 1px solid #DFDFDF;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <b>My Network
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto ms-5 mb-2 mb-md-0 pe-3">
+          <li class="nav-item">
+            <div id="tags" class="mt-11 mx-auto justify-content-center"></div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input id="search-input" type="text" class="form-control form-control" placeholder="Search..." />
+          <a class="btn btn-outline" href="https://StephanSmith.solutions/startup_tools" target="_blank">Why?</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flex-shrink-0 mt-3">
+    <!-- <div class="row">
+        <div class="col-12 text-center mx-auto" style="width: 50%;">
+          <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Search..." />
+        </div>
+      </div> -->
+    <!-- <div id="tags" class="mt-3 mx-auto justify-content-center"></div> -->
+    <div class="mt-3" id="hits"></div>
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container  text-center">
+        <span class="text-body-secondary">
+          Networking Tools from <a href="https://StephanSmith.solutions" target="_blank">Stephan Smith</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <style>
+    .card-text {
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .tags { 
+      font-size: 10px;
+    }
+  </style>
+
+  <script type="text/html" id="hits-template">
+      <div class="row justify-content-center">
+        {{#hits}}
+          <div class="card m-2 shadow-box" style="width: 18rem;">
+            <img src="{{ProfilePicture}}" class="card-img-top" alt="{{NameFirst}} {{NameLast}}" onerror="this.onerror=null; this.src='https://placehold.co/400x400?text=Missing';">
+            <div class="card-body">
+              <h5 class="card-title">
+                {{FirstName}} {{LastName}}
+              </h5>
+              <p class="card-text">
+                {{JobTitle}} {{Company}}
+              </p>
+              <p class="card-text">
+                {{Headline}}
+              </p>
+              <p class="tags">
+                {{Tags}}
+              </p>
+            </div>
+            <a href="{{Linkedin}}" target="_blank" class="btn btn-primary">
+              Since {{DateConnectedStr}} 
+            </a>
+            <br>
+          </div>
+        {{/hits}}
+      </div>
+    </script>
+
+  <script type="text/html" id="no-results-template">
+      <div id="no-results-message">
+        <p>We didn&rsquo;t find any results.</p>
+        <a href="#" class="clear-all">Clear all</a>
+      </div>
+  </script>
+
+</body>
+</html>
