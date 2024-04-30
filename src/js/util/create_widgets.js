@@ -2,7 +2,6 @@ var instantsearch = require('instantsearch.js');
 var infiniteScrollWidget = require('../search/widgets/infinite_scroll.js');
 
 module.exports = function (indexName) {
-  console.log('asdf', instantsearch.widgets)
   return [
     instantsearch.widgets.searchBox({
       container: '#search-input'

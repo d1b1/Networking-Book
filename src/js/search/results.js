@@ -9,10 +9,7 @@ module.exports = function (opts) {
     indexName: opts.indexName,
     urlSync: {
       useHash: true
-    },
-    // searchParameters: {
-    //   filters: 'statusTags: "Spring 2024"'
-    // }
+    }
   });
 
   var widgets = createWidgets(opts.indexName);
