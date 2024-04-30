@@ -57,8 +57,8 @@
 	
 	app({
 	  appId: 'UD1VE6KV0J',
-	  apiKey: 'd6efb57e27641a4e5f872628d4d86322', // Special API key generated to allow browsing
-	  indexName: 'Candid-Company'
+	  apiKey: '5c8b651e84655f9a1c65c9fb54af6271',
+	  indexName: 'Networking-Book'
 	});
 
 
@@ -88,9 +88,9 @@
 	    urlSync: {
 	      useHash: true
 	    },
-	    searchParameters: {
-	      filters: 'statusTags: "Spring 2024"'
-	    }
+	    // searchParameters: {
+	    //   filters: 'statusTags: "Spring 2024"'
+	    // }
 	  });
 	
 	  var widgets = createWidgets(opts.indexName);
@@ -64674,13 +64674,14 @@
 	var infiniteScrollWidget = __webpack_require__(882);
 	
 	module.exports = function (indexName) {
+	  console.log('asdf', instantsearch.widgets)
 	  return [
 	    instantsearch.widgets.searchBox({
 	      container: '#search-input'
 	    }),
 	    instantsearch.widgets.refinementList({
 	      container: '#tags',
-	      attributeName: 'tags',
+	      attributeName: 'Tags',
 	      limit: 10,
 	      operator: 'or'
 	    }),
@@ -64691,7 +64692,7 @@
 	        empty: document.querySelector('#no-results-template').innerHTML
 	      },
 	      offset: 850
-	    })
+	    }),
 	  ];
 	};
 

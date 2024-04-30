@@ -3,9 +3,9 @@
 
 <head>
   <title>
-    Candid Company Look-book
+    Personal Network
   </title>
-  <meta name="description" content="Search and find Venture Lane Members.">
+  <meta name="description" content="Search and find network tools">
   <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -26,12 +26,14 @@
     }
   </script>
 
-  <nav class="navbar navbar-expand-md fixed-top nav-shadow-box" style="background-color: #EFEFEF; border-bottom: 1px solid #DFDFDF;">
+  <nav class="navbar navbar-expand-md fixed-top nav-shadow-box"
+    style="background-color: #EFEFEF; border-bottom: 1px solid #DFDFDF;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <b>Candid Company (April 2023)
+        <b>My Network
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -49,37 +51,53 @@
   </nav>
 
   <div class="flex-shrink-0 mt-3">
-      <!-- <div class="row">
+    <!-- <div class="row">
         <div class="col-12 text-center mx-auto" style="width: 50%;">
           <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Search..." />
         </div>
       </div> -->
-      <!-- <div id="tags" class="mt-3 mx-auto justify-content-center"></div> -->
-      <div class="mt-3" id="hits"></div>
-      <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container  text-center">
-          <span class="text-body-secondary">
-            Networking Tools from <a href="https://StephanSmith.solutions" target="_blank">Stephan Smith</a>
-          </span>
-        </div>
-      </footer>
+    <!-- <div id="tags" class="mt-3 mx-auto justify-content-center"></div> -->
+    <div class="mt-3" id="hits"></div>
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container  text-center">
+        <span class="text-body-secondary">
+          Networking Tools from <a href="https://StephanSmith.solutions" target="_blank">Stephan Smith</a>
+        </span>
+      </div>
+    </footer>
   </div>
+
+  <style>
+    .card-text {
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .tags { 
+      font-size: 10px;
+    }
+  </style>
 
   <script type="text/html" id="hits-template">
       <div class="row justify-content-center">
         {{#hits}}
           <div class="card m-2 shadow-box" style="width: 18rem;">
-            <img src="https://raw.githubusercontent.com/d1b1/candid-company/master/data/headshots/{{image}}" class="card-img-top" alt="{{name}}">
+            <img src="{{ProfilePicture}}" class="card-img-top" alt="{{NameFirst}} {{NameLast}}" onerror="this.onerror=null; this.src='https://placehold.co/400x400?text=Missing';">
             <div class="card-body">
               <h5 class="card-title">
-                {{name}}
+                {{FirstName}} {{LastName}}
               </h5>
               <p class="card-text">
-                {{jobTitle}} {{company}}
+                {{JobTitle}} {{Company}}
+              </p>
+              <p class="card-text">
+                {{Headline}}
+              </p>
+              <p class="tags">
+                {{Tags}}
               </p>
             </div>
-            <a href="{{linkedin}}" target="_blank" class="btn btn-primary">
-              Connect on LinkedIn
+            <a href="{{Linkedin}}" target="_blank" class="btn btn-primary">
+              Since {{DateConnectedStr}} 
             </a>
             <br>
           </div>
