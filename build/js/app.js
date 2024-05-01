@@ -87,10 +87,7 @@
 	    indexName: opts.indexName,
 	    urlSync: {
 	      useHash: true
-	    },
-	    // searchParameters: {
-	    //   filters: 'statusTags: "Spring 2024"'
-	    // }
+	    }
 	  });
 	
 	  var widgets = createWidgets(opts.indexName);
@@ -64674,7 +64671,6 @@
 	var infiniteScrollWidget = __webpack_require__(882);
 	
 	module.exports = function (indexName) {
-	  console.log('asdf', instantsearch.widgets)
 	  return [
 	    instantsearch.widgets.searchBox({
 	      container: '#search-input'
