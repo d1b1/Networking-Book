@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@octokit/rest": "^20.1.0",
+    "async": "^3.2.5",
+    "axios": "^1.6.8",
     "csvtojson": "^2.0.10",
+    "dotenv": "^16.4.5",
     "moment": "^2.30.1"
   }
 }

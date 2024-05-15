@@ -1,10 +1,12 @@
-# Personal Lookbook
+# My Network Lookbook
 
-This is a personal networking look book.
+This is a personal networking look-book. I am working on a suite of tools to help intentional networks
+be more intentional about all aspects of their outreach. Strong networks are amazing, really strong networks
+are the foundation of communities.
 
 [Live Site](http://network.StephanSmith.solutions)
 
-![Infinite Scroll](./screencast.png)
+![Infinite Scroll](./screenshot.png)
 
 ## Features
 
@@ -19,4 +21,4 @@ This is a personal networking look book.
 Venture Lane is a B3B SAS Accelerator and Co-working space for startups facing the same 
 set of scaling challenges. It is also the hard of a growing startup community.
 
-[Learn More](https://theventurelane.com/)
+[Learn More](https://networking-book.stephansmith.solutions/)
