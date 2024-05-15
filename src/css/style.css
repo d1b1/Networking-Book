@@ -92,3 +92,7 @@ body{
   cursor: default;
   background: url('../img/search_icon.png') no-repeat;
 }
+
+.modal-body p {
+  font-weight: normal;
+}
