@@ -93,4 +93,7 @@ body{
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABE0lEQVR4AbXRA2wYYRwF8JsVLVq8YIymcA5n23bbsLbt9r7/q+PaCGsrTqpYta1/3Z7q7l348vtOT1oKnSQ7pFEBJZBp0DHJOE4HSWASvHwNCgtjVgqmCYL4IK6IX5Qyj6N1kCLAaMZFRfMAPWD6q2LhZ2kK4+HnNYffgKnT94iiggsYoZIuKAHTU2WRCxYv9ZA8wPBUwkqwfEkPxVcwZOXJLDC910P4gYWFElqDEadzu6geTLcVTdhxjGFa3FQ7mIHR6LRbVQp3MLWJ+yt3wz+MgBGpXWY3ksFgyhO2eCvcUb00pX7IXbBCv2LrFkSvRiX5KH2kIIqBvfzwxR5JEhbGVJf/TenLxuiIfENaP/Rljs0ATnu/OPUu9VwAAAAASUVORK5CYII=) no-repeat;
 }
 
+.modal-body p {
+  font-weight: normal;
+}
 /*# sourceMappingURL=app.css.map*/

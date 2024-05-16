@@ -50,6 +50,132 @@
     </div>
   </nav>
 
+  <!-- Modal -->
+  <div class="modal fade" id="engagementSignals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Score by Engagement</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>
+            Score your Network by Value Prop to Engagement?
+          </h4>
+          <p>
+            You know a lot of people. But some have more market value for your mission
+            then others. This approach allows you to import and score your network using 
+            your targets and how often you engage; email, calendar, SMS etc.
+          </p>
+          <p>
+            To get this feature you need an account, you need to 
+            enable access to your email, and your calendar. 
+          </p>
+          <p>
+            (If you use outlook, sorry, time to switch to Google Workspaces)
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="marketEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Score by Engagement</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>
+            Are you a Markit Attendee?
+          </h4>
+          <p>
+            Enable your account to import and score your network by
+            attendence at marketing events. Imagine going to the right
+            events knowing who you want to talk with.
+          </p>
+          <p>
+            Enable your account to import and score your network by
+            attendence at marketing events. Imagine going to the right
+            events knowing who you want to talk with.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="nearNetworks" tabindex="-1" aria-labelledby="nearNetworks" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Score by Engagement</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>
+            Near Networks?
+          </h4>
+          <p>
+            Quick definition. A 'near network' is the the professional netork of your business
+            parnter, co-founder, spouse etc. This tool lets you find deep network routing relationships
+            that you can use to get a warm engagement.
+          </p>
+          <p>
+            Enable your account to import and score your network by
+            attendence at marketing events. Imagine going to the right
+            events knowing who you want to talk with.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+     <!-- Modal -->
+     <div class="modal fade" id="networkStats" tabindex="-1" aria-labelledby="nearNetworks" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Score by Engagement</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4>
+              Network Stats
+            </h4>
+            <p>
+              Quick definition. A 'near network' is the the professional netork of your business
+              parnter, co-founder, spouse etc. This tool lets you find deep network routing relationships
+              that you can use to get a warm engagement.
+            </p>
+            <p>
+              Enable your account to import and score your network by
+              attendence at marketing events. Imagine going to the right
+              events knowing who you want to talk with.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
   <div class="flex-shrink-0 mt-3">
     <!-- <div class="row">
         <div class="col-12 text-center mx-auto" style="width: 50%;">
@@ -60,35 +186,47 @@
     <div class="row justify-content-center">
       <div class="col-8 mb-3" style="font-weight: normal;">
         Experimental Features for enhanced networking
-        <button class="btn btn-sm btn-success">
-          &#9745; Enable Overlay Calendar
-        </button>
-        <button class="btn btn-sm btn-success">
+
+        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#marketEvent">
           &#9745; Enable Intersect MarketEvent
         </button>
-      </div>
-    <div>
-    <div class="mt-3" id="hits"></div>
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
-      <div class="container  text-center">
-        <span class="text-body-secondary">
-          Networking Tools from <a href="https://StephanSmith.solutions" target="_blank">Stephan Smith</a>
-        </span>
-      </div>
-    </footer>
-  </div>
 
-  <style>
-    .card-text {
-      font-size: 13px;
-      font-weight: normal;
-    }
-    .tags { 
-      font-size: 10px;
-    }
-  </style>
+        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#engagementSignals">
+          &#9745; Score by Signal Strength
+        </button>
 
-  <script type="text/html" id="hits-template">
+        <button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#nearNetworks">
+          &#9745; Score Near Networks
+        </button>
+
+        <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#networkStats">
+          &#9745; Stats
+        </button>
+
+      </div>
+      <div>
+        <div class="mt-3" id="hits"></div>
+        <footer class="footer mt-auto py-3 bg-body-tertiary">
+          <div class="container  text-center">
+            <span class="text-body-secondary">
+              Networking Tools from <a href="https://StephanSmith.solutions" target="_blank">Stephan Smith</a>
+            </span>
+          </div>
+        </footer>
+      </div>
+
+      <style>
+        .card-text {
+          font-size: 13px;
+          font-weight: normal;
+        }
+
+        .tags {
+          font-size: 10px;
+        }
+      </style>
+
+      <script type="text/html" id="hits-template">
       <div class="row justify-content-center">
         {{#hits}}
           <div class="card m-2 shadow-box" style="width: 18rem;">
@@ -119,7 +257,7 @@
       </div>
     </script>
 
-  <script type="text/html" id="no-results-template">
+      <script type="text/html" id="no-results-template">
       <div id="no-results-message">
         <p>We didn&rsquo;t find any results.</p>
         <a href="#" class="clear-all">Clear all</a>
@@ -127,4 +265,5 @@
   </script>
 
 <script type="text/javascript" src="js/app.js"></script></body>
+
 </html>
