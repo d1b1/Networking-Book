@@ -179,11 +179,11 @@
     crossorigin="anonymous"></script>
 
   <div class="flex-shrink-0 mt-3">
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-12 text-center mx-auto" style="width: 50%;">
-          <input id="search-input" type="text" class="form-control form-control-lg" placeholder="Search..." />
+          <div id="sort-by"></div>
         </div>
-      </div> -->
+      </div>
     <!-- <div id="tags" class="mt-3 mx-auto justify-content-center"></div> -->
     <div class="row justify-content-center">
       <div class="col-8 mb-3" style="font-weight: normal;">
@@ -249,6 +249,10 @@
               <p class="tags">
                 {{ Tags }}
               </p>
+              <p class="tags">
+                Last Mtg: {{ calendly_LastMeetingAt }}
+              </p>
+              
             </div>
             <a href="{{Linkedin}}" target="_blank" class="btn btn-primary">
               Since {{DateConnectedStr}} 

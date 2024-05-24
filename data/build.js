@@ -57,9 +57,18 @@ csv()
         record.Tags = record.Tags.split(',');
         record.DateConnectedUnix = moment(record.DateConnected).unix();
         record.DateConnectedStr = moment(record.DateConnected).format('MMM DD, YYYY');
-
+        record.calendly_LastMeetingAtUnix = 0;
+        
+        // record.Locations = record.Location.split(', ').join(' > ');
+        var regions = record.Location.split(', ');
+        record.Locations = {
+          lvl1: regions[0],
+          lvl2: [ regions[0], regions[1]].join(' > '),
+          lvl3: [ regions[0], regions[1], regions[2] ].join(' > '),
+        }
+        
         dataToIndex.push(record);
-        ghQueue.push({ url: record.ProfilePicture, name: `${record.objectID}.jpeg`});
+        // ghQueue.push({ url: record.ProfilePicture, name: `${record.objectID}.jpeg`});
       } else {
         console.log('missing', record.Linkedin)
       }
@@ -72,15 +81,15 @@ csv()
       console.error('Error pushing data to Algolia:', err);
     });
 
-    // Dump it to a file.
-    const outputFilePath = './output_file.json'; 
-    fs.writeFile(outputFilePath, JSON.stringify(records, null, 2), (err) => {
-      if (err) {
-        console.error('Error writing JSON to file:', err);
-      } else {
-        console.log('JSON file has been saved.');
-      }
-    });
+    // // Dump it to a file.
+    // const outputFilePath = './output_file.json'; 
+    // fs.writeFile(outputFilePath, JSON.stringify(records, null, 2), (err) => {
+    //   if (err) {
+    //     console.error('Error writing JSON to file:', err);
+    //   } else {
+    //     console.log('JSON file has been saved.');
+    //   }
+    // });
 
   })
   .catch((error) => {
